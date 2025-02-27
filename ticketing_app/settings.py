@@ -37,10 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'tickets.apps.TicketsConfig',
     'tailwind',
     'theme',
-    'tickets',
-    'users'
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -131,7 +131,9 @@ LOGIN_REDIRECT_URL = ''
 TAILWIND_APP_NAME = 'theme'
 
 INTERNAL_IPS = [
-    "127.0.0.1:8000",
+    "127.0.0.1",
 ]
 
 NPM_BIN_PATH = "C:/Program Files/nodejs/npm.cmd"
+
+AUTH_USER_MODEL = 'auth.User' 
